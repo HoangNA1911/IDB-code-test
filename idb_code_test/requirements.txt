@@ -1,0 +1,7 @@
+Django>=4.2
+
+pandas==1.5.3
+
+pytest
+
+pytest-django
