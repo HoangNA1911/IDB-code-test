@@ -6,7 +6,7 @@ import pandas as pd
 from .models import Sale
 import datetime
 from django.db.models import Sum, Avg, Count
-
+from django.conf import settings
 
 @csrf_exempt
 def upload_csv(request):
@@ -41,7 +41,7 @@ def get_filtered_sales(request):
     end_date = request.GET.get('end_date')
     region = request.GET.get('region')
     page = request.GET.get('page', 1)
-    per_page = request.GET.get('per_page', 10)
+    per_page = request.GET.get('per_page', settings.PER_PAGE)
 
     sales = Sale.objects.filter(date__range=[start_date, end_date], region=region)
 
