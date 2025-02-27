@@ -22,3 +22,5 @@
   ```
   python manage.py runserver
   ```
+POSTMAN
+https://api555-4954.postman.co/workspace/My-Workspace~069008e7-c519-4cd4-815e-204fbd2dda3a/collection/28493783-d11dfdce-454e-4a4c-bbc3-489a69dc71be?action=share&creator=28493783
